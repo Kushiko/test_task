@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# Проект на Vite + React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Быстрый старт
 
-Currently, two official plugins are available:
+### 1. Клонирование репозитория
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/Kushiko/test_task.git
+cd test_task
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Установка зависимостей
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
+# или
+yarn install
+# или
+pnpm install
 ```
+
+### 3. Запуск проекта в режиме разработки
+
+```bash
+npm run dev
+# или
+yarn dev
+# или
+pnpm dev
+```
+
+Проект будет доступен по адресу, указанному в терминале
+
+### 4. Сборка проекта для продакшена
+
+```bash
+npm run build
+# или
+yarn build
+# или
+pnpm build
+```
+
+Собранные файлы будут находиться в папке `/dist`.
+
+### 5. Превью собранного проекта
+
+```bash
+npm run preview
+# или
+yarn preview
+# или
+pnpm preview
+```
+
+---
+
+## Стек технологий
+
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+---
+
+## Требования
+
+- Node.js >= 18
+- npm, yarn или pnpm
+
+---
